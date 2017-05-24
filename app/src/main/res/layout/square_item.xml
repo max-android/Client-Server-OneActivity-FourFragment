@@ -1,0 +1,43 @@
+
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="72dp"
+android:background="?selectableItemBackground"
+android:gravity="center_vertical"
+android:paddingEnd="16dp"
+android:paddingStart="16dp">
+
+<TextView
+    android:id="@+id/tvRepo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:ellipsize="end"
+    android:maxLines="1"
+    android:textColor="#303030"
+    android:textSize="18sp"
+    tools:text="Repo #1"/>
+
+<TextView
+    android:id="@+id/tvStars"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/tvRepo"
+    android:layout_marginTop="2dp"
+    android:textColor="#707070"
+    android:textSize="14sp"
+    tools:text="stars: 2"/>
+
+<TextView
+    android:id="@+id/tvForks"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:textColor="#707070"
+    android:textSize="14sp"
+    tools:text="forks: 2"
+    android:layout_alignBaseline="@+id/tvStars"
+    android:layout_toRightOf="@+id/tvStars" />
+
+</RelativeLayout>
